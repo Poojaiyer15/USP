@@ -5,7 +5,7 @@ case $# in
 shift 
 for word in "$@"
 do 
-grep "$word" $fname ||  
+grep -q "$word" $fname ||  
 echo "word not found"
 done ;;
 esac
